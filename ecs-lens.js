@@ -24,7 +24,7 @@ async function run (options) {
 
   const table = output.buildResultTable(deployments)
 
-  console.log(table.toString())
+  output.printResults(table)
 }
 
 if (require.main === module) {
